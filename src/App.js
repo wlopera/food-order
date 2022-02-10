@@ -1,12 +1,17 @@
+import React, { Fragment } from "react";
 import "./App.css";
+import Header from "./components/Layout/Header";
+import Meals from "./components/Meals/Meals";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Ventana de Inicio</h1>
-      <hr />
-    </div>
+    <Fragment>
+      <Header />
+      <main>
+        <Meals />
+      </main>
+    </Fragment>
   );
-}
+};
 
 export default App;
